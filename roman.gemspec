@@ -15,7 +15,7 @@ Gem::Specification.new do |gem|
   gem.require_paths = ["lib"]
   gem.version       = Roman::VERSION
 
-  gem.add_development_dependency 'rspec', '2.12.0'
-  gem.add_development_dependency 'guard-rspec', '2.3.0'
-  gem.add_development_dependency 'rb-fsevent', '0.9.2'
+  gem.add_development_dependency 'rspec', '3.13.2'
+  # gem.add_development_dependency 'guard-rspec', '2.3.0'
+  # gem.add_development_dependency 'rb-fsevent', '0.9.2'
 end

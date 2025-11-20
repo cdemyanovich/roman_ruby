@@ -2,8 +2,8 @@ require 'roman'
 
 describe Roman::Izer, '.convert' do
   it 'does not convert numbers too small' do
-    Roman::Izer.convert(0).should == ''
-    Roman::Izer.convert(-1).should == ''
+    expect(Roman::Izer.convert(0)).to  eq('')
+    expect(Roman::Izer.convert(-1)).to eq('')
   end
 
   {
@@ -29,7 +29,7 @@ describe Roman::Izer, '.convert' do
     3888 => 'MMMDCCCLXXXVIII',
   }.each do |arabic, roman|
     it "converts #{sprintf('%4d', arabic)} : #{roman}" do
-      Roman::Izer.convert(arabic).should == roman
+      expect(Roman::Izer.convert(arabic)).to eq(roman)
     end
   end
 end
